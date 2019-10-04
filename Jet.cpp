@@ -21,9 +21,9 @@ int Jet::getNumberOfEngines()
 	return numberOfEngines;
 }
 
-double Jet::mileageEstimate() {
+double Jet::mileageEstimate(double time) {
     srand(time(NULL));
-    double mileage = (rand() % 61) + 40;
+    double mileage = ((rand() % 61) + 40) * time;
     
     if (fuelType == "Rocket" && numberOfEngines > 2) 
     {
