@@ -1,0 +1,50 @@
+(a)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 417 bytes | 417.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+ls
+To https://github.com/Fordn1075/assignment2.git
+   b2fccf2..693ed59  master -> master
+
+(b) 
+9 commits 
+git rev-list --all --count
+
+(c) 
+Wed Sep 25 18:13:30 2019 -0400
+git log -1 --format="%ad" -- .gitignore
+
+(d)
+Branches allow for different versions of working code.
+Branches allow for you to capture a snapshot of your changes. (Bug fix or a new feature)
+
+(e)
+git log displays the committed snapshots, only operates on the commited history
+While git status lets you inspect the working directory and the staging area
+
+(f)
+git log --follow -- Vehicle.h
+
+(g)
+git log --all --grep="file"
+
+(h)
+1. Inheritance is when a class is related to a parent class and then can use the public or protected variables or methods related to the parent class.
+Polymorphism means that a parent class can react differenctly based on the reference to a subclass or type.
+Encapsulation is also known as information hiding and it is when you make variables of a class private, and they can onyl be accessed through getters and setters.
+
+(i)
+With Integration Manager workflow the developers only work with their own versions of the code, and submit it to a integration manager;then they will solve the conflicts
+	before pushing the changes to the blessed repository.
+With Dictator and Lieutenants workflow the developers push their changes to lieutenants who will then merge the changes for some of the developers and then push their work
+	to the dictator who will then do the same with the lieutenants work. The dictator will then push their work to the blessed repository.
+
+(j)
+Instead of one person dealing with 99 different versions and trying to merge, and solve conflicts of all 99 versions, the work can be split up into a tree.
+	 Where groups of 4 people whose work is given to one person 1, who in turn works with a group for 4 people with similar jobs, to give their work to one person to merge. 
+
+
