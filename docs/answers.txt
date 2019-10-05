@@ -45,6 +45,13 @@ With Dictator and Lieutenants workflow the developers push their changes to lieu
 
 (j)
 Instead of one person dealing with 99 different versions and trying to merge, and solve conflicts of all 99 versions, the work can be split up into a tree.
-	 Where groups of 4 people whose work is given to one person 1, who in turn works with a group for 4 people with similar jobs, to give their work to one person to merge. 
+	 Where groups of 4 people whose work is given to one person 1, who in turn works with a group for 4 people with similar jobs, to give their work to one person to merge.
+
+5.
+	The driving simulator uses both polymorhpism and encapsulation.
+		An example that the Driving simulator uses polymorphism is when it estimates mileage. 
+		Each of the classes has its own mileage estimation that based on the class that the pointer is pointing to.
+		
+		An example of Encapsulation is seen when retreiving data from an object. In order to access the variable information the program needs to call a getter.
 
 
