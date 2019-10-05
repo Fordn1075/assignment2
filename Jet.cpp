@@ -16,7 +16,7 @@ Jet::Jet(string x)
 	setFuelType(x);
 }
 
-void Jet::setNumberOfEnginers(int x)
+void Jet::setNumberOfEngines(int x)
 {
 	numberOfEngines = x;
 }

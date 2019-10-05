@@ -18,7 +18,7 @@ public:
 	explicit Jet(string fuelType);
 
 	int getNumberOfEngines();
-	void setNumberOfEnginers(int x);
+	void setNumberOfEngines(int x);
 	virtual double mileageEstimate(double time);
 	virtual string toString();
 };
