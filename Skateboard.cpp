@@ -6,18 +6,21 @@
 #include <stdlib.h>
 #include <time.h>
 
-double Skateboard::mileageEstimate(double time) {
-	srand(time(NULL));
+double Skateboard::mileageEstimate(double x) {
     double mileage;
 
-    if(time > 25 && time < 250)
+    if(x > 25 && x < 250)
     {
-    	mileage = (rand() % (time * 0.3) + 1) * time;
+    	mileage = (rand() % lround(x * 0.3) + 1);
     }
     else
     {
-    	mileage = (rand() % 5 + 1)/10 * time;
+    	mileage = (rand() % 5 + 1)/10 * x;
     }
     
     return mileage;
+}
+
+string Skateboard::toString() {
+	return "-> Skateboard\n";
 }

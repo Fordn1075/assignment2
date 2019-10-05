@@ -11,6 +11,11 @@ Jet::Jet()
 	numberOfEngines = 1;
 }
 
+Jet::Jet(string x)
+{
+	setFuelType(x);
+}
+
 void Jet::setNumberOfEnginers(int x)
 {
 	numberOfEngines = x;
@@ -21,9 +26,8 @@ int Jet::getNumberOfEngines()
 	return numberOfEngines;
 }
 
-double Jet::mileageEstimate(double time) {
-    srand(time(NULL));
-    double mileage = ((rand() % 61) + 40) * time;
+double Jet::mileageEstimate(double x) {
+    double mileage = ((rand() % 61) + 40) * x;
     
     if (fuelType == "Rocket" && numberOfEngines > 2) 
     {
@@ -31,4 +35,9 @@ double Jet::mileageEstimate(double time) {
     }
 
     return mileage;
+}
+
+string Jet::toString() {
+	return "-> Jet\n" + PoweredVehicle::toString() + "\n\tNumber of Engines: " + 
+		std::to_string(numberOfEngines);
 }

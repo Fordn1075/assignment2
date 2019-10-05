@@ -15,9 +15,12 @@ private:
 public:
 	Jet();
 
+	explicit Jet(string fuelType);
+
 	int getNumberOfEngines();
 	void setNumberOfEnginers(int x);
 	virtual double mileageEstimate(double time);
+	virtual string toString();
 };
 
 #endif //DRIVINGSIMULATOR_JET_H

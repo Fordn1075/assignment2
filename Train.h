@@ -15,6 +15,7 @@ private:
 public:
 	Train();
 	virtual double mileageEstimate(double time);
+	virtual string toString();
 };
 
 #endif //DRIVINGSIMULATOR_TRAIN_H
