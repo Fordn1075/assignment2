@@ -10,10 +10,11 @@
 class Train : public PoweredVehicle{
 
 private:
-	int numberOfCoalNuggets;
+	int numberOfCoalNuggets; //Number of coal nuggets on the train
 
 public:
 	Train();
+	virtual ~Train();
 	virtual double mileageEstimate(double time);
 	virtual string toString();
 };

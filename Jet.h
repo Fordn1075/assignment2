@@ -10,15 +10,16 @@
 class Jet : public PoweredVehicle{
 
 private:
-	int numberOfEngines;
+	int numberOfEngines; 
 
 public:
 	Jet();
 
-	explicit Jet(string fuelType);
+	explicit Jet(string fuelType); //constructor for fueltype
+	virtual ~Jet();
 
-	int getNumberOfEngines();
-	void setNumberOfEngines(int x);
+	int getNumberOfEngines(); //number of engines
+	void setNumberOfEngines(int x); //set engines
 	virtual double mileageEstimate(double time);
 	virtual string toString();
 };

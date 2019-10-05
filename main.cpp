@@ -22,6 +22,8 @@ int main() {
     vehiclesArray[3] = new Car("Tesla", "T2", "electricity", "large");
     vehiclesArray[4] = new Bicycle("Mizuno", "Wave", 10);
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
+
+	//Adding new tests for the new classes
     vehiclesArray[6] = new Jet();
     vehiclesArray[7] = new Jet("Rocket");
     vehiclesArray[8] = new Skateboard();
